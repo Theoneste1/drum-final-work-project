@@ -10,8 +10,7 @@ html{
     justify-content: center;
     align-items: center;
 /*
-    justify-content: center;
-    align-items: center;
+    
 */
 }
 
@@ -20,7 +19,9 @@ html{
     margin:.5rem;
     display:grid;
     text-align:center;
-    opacity: 0.5;
+    padding: 10px;
+    opacity: .7;
+    border: 4px dotted white;
 }
 kbd{
 color: white;
@@ -35,16 +36,17 @@ text-transform: uppercase;
 
 /*class when you are playing*/
 .playing{
-    background-color:darkred;
-    margin: 1rem;
+    background-color:dodgerblue;
 /*    This means the time it would take to transform*/
-    transition: all 1s;
+    transition: all .2s;
 /*    how and what is going to transform, below, it means that width and height would increase by 1.5 and 1.6 respectively*/
 /*    transform:scale(1.5,1.6);  */
 /*    increase two times its original */
-    transform:scale(1.5, 1.6);
+    transform:scale(1.1, 1.1);
+    box-shadow: 5px white;
+    border: 4px dotted green;
     
-    
+
     }
 
 

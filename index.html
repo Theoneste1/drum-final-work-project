@@ -102,14 +102,16 @@
             keys.forEach(key=>key.addEventListener(`transitionend`, removeTransition));
             
             function removeTransition(e){
-                console.log(e.transition);
+                //This is just one of the property name
+//            
+                if(e.propertyName=="background-color") 
+//                    console.log(this);
+                    //then I want to remove this class
+                    this.classList.remove("playing");
+                    
+                    
             }
             
-
-            
-            
-            
-        
         </script>
         
     </body>

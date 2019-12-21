@@ -20,6 +20,7 @@ html{
     margin:.5rem;
     display:grid;
     text-align:center;
+    opacity: 0.5;
 }
 kbd{
 color: white;
@@ -31,3 +32,21 @@ text-transform: uppercase;
     text-transform: capitalize;
     color: greenyellow;
 }
+
+/*class when you are playing*/
+.playing{
+    background-color:darkred;
+    margin: 1rem;
+/*    This means the time it would take to transform*/
+    transition: all 1s;
+/*    how and what is going to transform, below, it means that width and height would increase by 1.5 and 1.6 respectively*/
+/*    transform:scale(1.5,1.6);  */
+/*    increase two times its original */
+    transform:scale(1.5, 1.6);
+    
+    
+    }
+
+
+
+

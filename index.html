@@ -79,21 +79,35 @@
             
             function playSound(e)
             {
-                keyPressed=document.querySelector(`.key[data-key="${e.keyCode}"]`);
+               const keyPressed=document.querySelector(`.key[data-key="${e.keyCode}"]`);
                 
 //                console.log(e.keyCode);
                 
                 // the looking for the sounds of the key
                 
-                soundPlayed=document.querySelector(`audio[data-key="${e.keyCode}"]`);
+                const soundPlayed=document.querySelector(`audio[data-key="${e.keyCode}"]`);
                 
 //                console.log(soundPlayed);
                 if(!soundPlayed)
                     return; // do nothing if no sound for keyPressed.
                 soundPlayed.play();
-                keyPressed.classList.add("playing");
-                
+                keyPressed.classList.add("playing");  
+                soundPlayed.currentTime=0;                      
             }
+            
+            //removing transition
+            const keys=document.querySelectorAll('.key');
+//            console.log(keys)
+            
+            keys.forEach(key=>key.addEventListener(`transitionend`, removeTransition));
+            
+            function removeTransition(e){
+                console.log(e.transition);
+            }
+            
+
+            
+            
             
         
         </script>

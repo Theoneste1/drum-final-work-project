@@ -1,3 +1,33 @@
 html{
-    background-color: blanchedalmond;
+/*background-image:url(../images/Theoneste.jpg);*/
+}
+/* keys division*/
+.keys{
+    background-image:url(../images/Theoneste.jpg);
+    background-size: cover;
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*
+    justify-content: center;
+    align-items: center;
+*/
+}
+
+.key{
+    background-color: black;
+    margin:.5rem;
+    display:grid;
+    text-align:center;
+}
+kbd{
+color: white;
+font-size: 1.5rem;
+text-transform: uppercase;    
+}
+.sound{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: greenyellow;
 }
